@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/tab_administration.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdministrationFragment">
+
+    <EditText
+        android:id="@+id/faculties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/faculties" />
+
+    <EditText
+        android:id="@+id/departments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/departments" />
+
+    <EditText
+        android:id="@+id/lecturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lecturer" />
+
+    <!-- Buttons for Add,Delete,Update,Search -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_tab1"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_button" />
+
+        <Button
+            android:id="@+id/delete_tab1"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_button" />
+
+        <Button
+            android:id="@+id/update_tab1"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="@string/update_button" />
+
+        <Button
+            android:id="@+id/search_tab1"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="@string/search_button" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
